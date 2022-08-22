@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="game_login.js"></script>
+</head>
+<body style="background-color:royalblue;">
+
+<div class="container">
+	<h3 id ="Player1_name"></h3><span id="Player1_score">: 0</span>
+		<h3 id ="Player2_name"></h3><span id="Player2_score">: 0</span>
+		<br>
+		
+		<img class="set1" style="display:none;" id="emote1" src="https://tse1.mm.bing.net/th?id=OIP.Fc2M72MWzxAKz08byz2YSAHaEK&pid=Api&P=0" ><img class="set1" id="emote2" style="display:none;" src="https://tse4.mm.bing.net/th?id=OIP.h1ssqjx9chwNcDhi2-lvjQHaHa&pid=Api&P=0" ><img id="emote3" class="set1" style="display:none;" src="https://tse3.mm.bing.net/th?id=OIP.HUWrtsgFOnGEZJGEiBk0tQHaHw&pid=Api&P=0" > 
+
+		<h4 id="P1Says"></h4>
+		
+		<br>
+		<button id="getgud" onmouseover="clicketyClick();"  >Emotes</button>
+		<div  style="display: none;"id="tabloon">
+			
+					<button  id="amWin" onclick="Emoted_1();">hahae! me winning :DDDDDDDD</button>
+					<button id="amLos" onclick="Emoted_2();">ono! ur in da leed! waaaaaah :(</button>
+					<button id="amWon" onmouseout="imOuttaHere();" onclick="Emoted_3();">O YEAHHHHHHHHHH I WONNNNNNNNNNN</button>
+			</div>
+		
+		<img class="set2" style="display:none;" id="emote4" src="https://tse1.mm.bing.net/th?id=OIP.Fc2M72MWzxAKz08byz2YSAHaEK&pid=Api&P=0" ><img class="set2" id="emote5" style="display:none;" src="https://tse4.mm.bing.net/th?id=OIP.h1ssqjx9chwNcDhi2-lvjQHaHa&pid=Api&P=0" ><img class="set2" id="emote6" style="display:none;" src="https://tse3.mm.bing.net/th?id=OIP.HUWrtsgFOnGEZJGEiBk0tQHaHw&pid=Api&P=0" >	
+	<h4 id = "P2Says" style="margin-left: 300px;"></h4>
+	<br>
+	<button id="getgud2" onmouseover="clicketyClick2();" >Emotes</button>
+	<div id="drpDn"  style="display: none;"  >
+		
+				<button style="display: none;" id="amWin2" onclick="Emoted_4();">hahae! me winning :DDDDDDDD</button>
+				
+				<button style="display: none;" id="amLos2" onclick="Emoted_5();">ono! ur in da leed! waaaaaah :(</button>
+			
+				<button  onmouseout="imOuttaHere2();" style="display: none;" id="amWon2" onclick="Emoted_6();">O YEAHHHHHHHHHH I WONNNNNNNNNNN</button>
+				</div>
+			
+
+	<center>
+		<h2  id="BIG_ONE" style="color: white;">Guess The Word!</h2>
+		<h2>Question Person:</h2><span id="Question_Person"> </span>
+		<h2>Answer Person:</h2><span id="Answer_Person"> </span>
+		<div style="border-style: ridge; background-color: rebeccapurple; text-align: left;" id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+
+		<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabet</b></label>
+		<br>
+		<input type="text" id="mr_input">
+		<br>
+		<button type="button" id="all_buttoned_up" onclick="send();">Send</button>
+		<br>
+		
+		<br>
+		<button id="buttonius" class="btn-warning" onclick="youWin();">You Win Tester</button>
+		
+		<p>The button above shows what i have done extra for the project. I have installed this button since there was no point system, so this will let player1 auto win. Hint: After pressing this button, wait 5 seconds for a surprise ;)</p>
+		<label>Also, if the dropdown will not close, make sure to scroll over the last option. Thanks!</label>
+	</center>
+</div>
+
+</body>
+</html>
